@@ -1,0 +1,73 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/./poppins/Poppins-Regular.ttf);
+}
+
+:root{
+    --shadow1: 0 .125rem .25rem rgba(0,0,0,.075);
+    --shadow2: 0 .5rem 1rem rgba(0,0,0,.15);
+    --shadow3: 0 1rem 3rem rgba(0,0,0,.175);
+    --shadow4: 0 1rem 3rem rgba(255, 255, 255, 0.275);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.main-accordion{
+    width: 600px;
+    margin:80px auto 0;
+}
+.main-accordion .accordion-item{
+    border-top: 1px solid #ECEDEF;
+    /* border-bottom: 1px solid #ECEDEF; */
+}
+.main-accordion .accordion-item .accordion-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 16px;
+    color: #202124;
+    cursor: pointer;
+    text-align: center;
+}
+.main-accordion .accordion-item .accordion-header span{
+    font-size: 16px;
+    color: #202124;
+    font-weight: 400;
+}
+.main-accordion .accordion-item .accordion-header img{
+    height: 20px;
+    width: 20px;
+    transition: .4s;
+}
+.main-accordion .accordion-item .accordion-header.active img{
+   transform: rotate(180deg);
+   transition: .4s;
+}
+.main-accordion .accordion-item .accordion-body{
+   display: none;
+   padding: 10px 12px 15px;
+   height: auto;
+   font-size: 14px;
+   color: #000;
+   font-family: segoe UI;
+   transition: 0.4s;
+}
+.main-accordion .accordion-item .accordion-body.active{
+    transition: .4s;
+    display: block;
+ }
+ .main-accordion .accordion-item .accordion-header.active{
+    background-color: #ccc;
+    transition: 0.4s;
+}
